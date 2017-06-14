@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fenniao.a3kezhi.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup"
+        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <RadioButton
+            android:id="@+id/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="理财"
+            android:textColor="@color/color_radiobutton"
+            android:button="@null"
+            android:background="@android:color/white"
+            android:drawableTop="@drawable/radio_home" />
+        <RadioButton
+            android:id="@+id/licai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="账户"
+            android:textColor="@color/color_radiobutton"
+            android:button="@null"
+            android:background="@android:color/white"
+            android:drawableTop="@drawable/radio_home"/>
+        <!--<RadioButton-->
+            <!--android:id="@+id/wode"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="我的"-->
+            <!--android:textColor="@color/color_radiobutton"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@drawable/radio_home" />-->
+        <!--<RadioButton-->
+            <!--android:id="@+id/gengduo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="更多"-->
+            <!--android:textColor="@color/color_radiobutton"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@drawable/radio_home" />-->
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
